@@ -7,7 +7,29 @@
  * 4. Copy the config object snippet, then add it here.
  */
 const config = {
-  /* TODO: ADD YOUR FIREBASE CONFIGURATION OBJECT HERE */
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyACN0jPVz5wUd754G5Ms709yHCA4HtvORw",
+    authDomain: "friendly-chat-47420.firebaseapp.com",
+    projectId: "friendly-chat-47420",
+    storageBucket: "friendly-chat-47420.appspot.com",
+    messagingSenderId: "578095008714",
+    appId: "1:578095008714:web:1e492830c2ef3a07289d33",
+    measurementId: "G-D2MY132ZG4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 };
 
 export function getFirebaseConfig() {
